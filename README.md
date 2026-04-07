@@ -68,3 +68,79 @@ Your uploaded files are:
 	•	demo_1.jpeg → dashboard / project image
 	•	demo_2.jpeg → project image
 	•	demo_3.jpeg → project setup image
+
+🧠 Machine Learning Details
+
+Model Used:
+
+Random Forest Classifier
+
+Input Features:
+	•	Temperature
+	•	Humidity
+	•	Gas Value
+	•	Intrusion Status
+	•	Vent Status
+
+Output:
+	•	safe
+	•	warning
+	•	danger
+
+Purpose:
+
+The ML model learns from collected greenhouse data and predicts the risk level of the greenhouse environment in real-time.
+
+⸻
+
+🔌 Working Principle
+
+Step 1 — Sensor Monitoring
+
+The ESP32 continuously reads:
+	•	Temperature
+	•	Humidity
+	•	Gas concentration
+	•	Intrusion / movement
+
+⸻
+
+Step 2 — Smart Ventilation
+
+If the environment becomes risky (for example high temperature or gas value), the servo motor rotates to simulate greenhouse vent opening.
+
+⸻
+
+Step 3 — Cloud Monitoring
+
+All sensor data is sent to Blynk Cloud, where it is displayed on a real-time IoT dashboard.
+
+⸻
+
+Step 4 — Data Logging
+
+A Python script (logger.py) fetches this live data from Blynk and stores it into a CSV dataset.
+
+⸻
+
+Step 5 — Machine Learning Training
+
+The collected data is labeled and used to train a machine learning model.
+
+⸻
+
+Step 6 — Live Prediction
+
+Another Python script (live_predictor_file.py) uses the trained model to predict the greenhouse risk level in real-time.
+
+⸻
+
+📈 Example Use Cases
+
+This project can be extended for:
+	•	Smart farming
+	•	Greenhouse automation
+	•	Crop safety monitoring
+	•	Industrial environmental monitoring
+	•	Hazard detection systems
+	•	Smart lab environment monitoring
