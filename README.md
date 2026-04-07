@@ -59,15 +59,14 @@ Python Libraries Used
 
 📁 Project Files
 
-Your uploaded files are:
-	•	esp32-code.ino → ESP32 firmware
-	•	logger.py → collects real-time data from Blynk
-	•	train_model.py → trains machine learning model
-	•	live_predictor_file.py → predicts live risk score
-	•	greenhouse_data_labeled.csv → labeled training dataset
-	•	demo_1.jpeg → dashboard / project image
-	•	demo_2.jpeg → project image
-	•	demo_3.jpeg → project setup image
+- [esp32-code.ino](./esp32-code.ino) → ESP32 firmware
+- [logger.py](./logger.py) → collects real-time data from Blynk
+- [train_model.py](./train_model.py) → trains machine learning model
+- [live_predictor_file.py](./live_predictor_file.py) → predicts live risk score
+- [greenhouse_data_labeled.csv](./greenhouse_data_labeled.csv) → labeled training dataset
+- [demo_1.jpeg](./demo_1.jpeg) → dashboard / project image
+- [demo_2.jpeg](./demo_2.jpeg) → project image
+- [demo_3.jpeg](./demo_3.jpeg) → project setup image
 
 🧠 Machine Learning Details
 
