@@ -1,67 +1,70 @@
-# smart-greenhouse-ai🌱 AI-Based Smart Greenhouse Monitoring System
+🌱 AI-Powered Smart Greenhouse System (ESP32 + IoT + ML)
 
-🚀 Overview
-
-This project is an IoT + Machine Learning based smart greenhouse system that monitors environmental conditions and predicts risk levels in real-time.
-
-The system uses ESP32 with multiple sensors and integrates with Blynk Cloud for live monitoring and a Python-based ML model for intelligent decision making.
+A complete end-to-end intelligent greenhouse monitoring and control system using ESP32, Blynk IoT, and Machine Learning.
 
 ⸻
 
-⚙️ Features
-	•	🌡️ Temperature & Humidity Monitoring (DHT11)
-	•	🌫️ Gas / Smoke Detection (MQ Sensor)
-	•	🚨 Intrusion Detection (IR Sensor)
-	•	⚙️ Automated Ventilation (Servo Motor)
-	•	📱 Real-time Dashboard (Blynk IoT)
-	•	🧠 Machine Learning Risk Prediction
-	•	📊 Live Risk Score Visualization
+🚀 Project Overview
+
+This project combines hardware + cloud + machine learning to create a smart greenhouse system that:
+	•	Monitors environmental conditions in real-time
+	•	Detects gas, intrusion, and temperature anomalies
+	•	Predicts risk levels using a trained ML model
+	•	Automatically controls ventilation using a servo motor
+	•	Displays live data on a Blynk dashboard
 
 ⸻
 
 🧠 System Architecture
 
-Sensors → ESP32 → Blynk Cloud → Python ML Model → Risk Prediction → Dashboard
+Sensors → ESP32 → Blynk Cloud → Python Logger → Dataset → ML Model → Risk Prediction → Dashboard
 
 ⸻
 
-🛠️ Hardware Components
-	•	ESP32
+⚙️ Features
+	•	🌡️ Temperature & Humidity Monitoring (DHT11)
+	•	🌫️ Gas Detection (MQ Sensor)
+	•	🚨 Intrusion Detection (IR Sensor)
+	•	⚙️ Automatic Vent Control (Servo Motor)
+	•	📡 Real-time IoT Dashboard (Blynk)
+	•	📊 Data Logging (CSV)
+	•	🧠 Machine Learning Risk Prediction
+	•	📈 Live Risk Score Visualization
+
+⸻
+
+🛠️ Hardware Used
+	•	ESP32 Dev Board
 	•	DHT11 Sensor
 	•	MQ Gas Sensor
 	•	IR Sensor
 	•	Servo Motor
+	•	Breadboard
+	•	Jumper Wires
 
 ⸻
 
 💻 Software Stack
 	•	Arduino IDE
-	•	Python (pandas, scikit-learn)
+	•	Python
 	•	Blynk IoT Cloud
+
+Python Libraries Used
+	•	pandas
+	•	scikit-learn
+	•	requests
+	•	joblib
 
 ⸻
 
-📊 Machine Learning
-	•	Model: Random Forest Classifier
-	•	Inputs: Temperature, Humidity, Gas, Intrusion
-	•	Output: Risk Level (Safe / Warning / Danger)
+📁 Project Files
 
-  Project Structure:
-esp32_code/
-python/
-data/
-images/
-
-🚀 How to Run
-
-1. Upload ESP32 Code
-Use Arduino IDE to upload code to ESP32.
-
-2. Run Data Logger
-python python/logger.py
-
-3. Train Model
-python python/train_model.py
-
-4. Run Live Prediction
-python python/predict_live.py
+Your uploaded files are:
+	•	esp32-code.ino → ESP32 firmware
+	•	logger.py → collects real-time data from Blynk
+	•	train_model.py → trains machine learning model
+	•	live_predictor_file.py → predicts live risk score
+	•	greenhouse_data_labeled.csv → labeled training dataset
+	•	demo_1.jpeg → dashboard / project image
+	•	demo_2.jpeg → project image
+	•	demo_3.jpeg → project setup image
